@@ -33,8 +33,7 @@ p3=board[win_index_3]
 
 if p1== "X"&&p2=="X"&&p3=="X"
   return wc
-else
-  p1== "O"&&p2=="O"&&p3=="O"
+elsif p1== "O"&&p2=="O"&&p3=="O"
   return wc
 end
 }
