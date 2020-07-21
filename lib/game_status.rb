@@ -49,10 +49,13 @@ end
 def draw?(board)
   if !won?(board) && full?(board)
     return true
-  elseif !won?(board) && full?(board)|| !won?(board)
+  else
     return false
   end
 end
+
+
+
 def over?(board)
   if(won?(board)||full?(board)||draw?(board))
     return ture
@@ -70,7 +73,7 @@ def winner(board)
   if index==false
     return nil
   else
-    if board[index[0]]=="X"
+    if board[index[0]]== "X"
       return "X"
     else
       return "O"
