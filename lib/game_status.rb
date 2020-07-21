@@ -33,7 +33,7 @@ def winner(board)
     end
   end
 end
-  
+
 def won?(board)
   WIN_COMBINATIONS.each|wc|
   win_index_1=WIN_COMBINATIONS[0]
@@ -55,7 +55,7 @@ end
 
 def full?(board)
   !board.any? { |index| index == "X "||index=="O" }
-  
+
 end
 
 def draw?(board)
