@@ -36,9 +36,9 @@ end
 
 def won?(board)
   WIN_COMBINATIONS.each|wc|
-  win_index_1=WIN_COMBINATIONS[0]
-  win_index_2=WIN_COMBINATIONS[1]
-  win_index_3=WIN_COMBINATIONS[2]
+  win_index_1=wc[0]
+  win_index_2=wc[1]
+  win_index_3=wc[2]
 
 p1=board[win_index_1]
 p2=board[win_index_2]
