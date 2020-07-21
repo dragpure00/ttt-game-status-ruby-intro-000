@@ -19,6 +19,19 @@ WIN_COMBINATIONS = [
 
 ]
 
+def winner(board)
+  index=[]
+  index=won?(board)
+  if index==false
+    return nil
+  else
+    if board[index[0]]== "X"
+      return "X"
+    else
+      return "O"
+    end
+  end
+end
 
 
 def won?(board)
@@ -62,19 +75,3 @@ def over?(board)
   end
 end
 
-
-
-
-def winner(board)
-  index=[]
-  index=won?(board)
-  if index==false
-    return nil
-  else
-    if board[index[0]]== "X"
-      return "X"
-    else
-      return "O"
-    end
-  end
-end
