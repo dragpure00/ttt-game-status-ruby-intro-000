@@ -54,7 +54,7 @@ return false
 end
 
 def full?(board)
-  !board.any? { |index| index == "X "||index=="O" }
+  !board.all? { |index| index == "X "||index=="O" }
 
 end
 
