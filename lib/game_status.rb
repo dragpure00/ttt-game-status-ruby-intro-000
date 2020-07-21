@@ -40,14 +40,14 @@ def won?(board)
   win_index_2=wc[1]
   win_index_3=wc[2]
 
-position_1=board[win_index_1]
-position_2=board[win_index_2]
-position_3=board[win_index_3]
+p1=board[win_index_1]
+p2=board[win_index_2]
+p3=board[win_index_3]
 
-if position_1== "X"&&position_2=="X"&&position_3=="X"
+if p1== "X"&&p2=="X"&&p3=="X"
   return wc
 else
-  position_1== "O"&&position_2=="O"&&position_3=="O"
+  p1== "O"&&p2=="O"&&p3=="O"
   return wc
 end
 }
